@@ -1,0 +1,17 @@
+// ==UserScript==
+// @name         Game.es no adblock Userscript
+// @author       You
+// @resource     IMPORTED_CSS https://raw.githubusercontent.com/OscarLake/css-nooverflow/main/game.es.css
+// @match        https://game.es/*
+// @match        https://www.game.es/*
+// @icon         https://www.google.com/s2/favicons?sz=64&incognito.inc
+// @grant        GM_addStyle
+// @grant        GM_getResourceText
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    const my_css = GM_getResourceText("IMPORTED_CSS");
+    GM_addStyle(my_css);
+})();
+
